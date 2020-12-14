@@ -152,7 +152,6 @@ Socket 编程
 
 1. Java进行了比较好的封装
 
-TODO:使用
 ![](img/tec03/27.png)
 
 # 7. UDP
@@ -169,8 +168,6 @@ TODO:使用
 
 ## 7.4. Java示例
 ![](img/tec03/32.png)
-
-TODO
 
 1. 数据报最大1024字节
 
