@@ -49,7 +49,7 @@ BootStrap
 
 ![](img/tec02/2.png)
 
-1. 在html文档中加载bootstrap相关的文件（jquery.js、bootstrap.min.js 和 bootstrap.min.css 文件）
+1. 在html文档中加载bootstrap相关的文件(jquery.js、bootstrap.min.js 和 bootstrap.min.css 文件)
     + Bootstrap 所有 JavaScript 插件都依赖 jQuery，因此 jQuery 必须在 Bootstrap 之前引入， jQuery 也必须使用最新版。
 2. 为了Bootstrap开发的网站对移动设备友好，确保适当的显示和触屏缩放，需要在网页的head中增加viewport meta 标签
 
@@ -170,10 +170,10 @@ BootStrap
 ![](img/tec02/11.png)
 
 1. class="table"设置内边距以及水平分割线
-2. class=“table-striped”在`<tbody>`内容主体上添加斑马线形式的条纹
-3. class=“table-bordered”表格周围增加边框
-4. class=“table-hover”在`<tbody>`内某一行启用鼠标悬停高亮换色
-5. class=“table-condensed”紧凑表格
+2. class="table-striped"在`<tbody>`内容主体上添加斑马线形式的条纹
+3. class="table-bordered"表格周围增加边框
+4. class="table-hover"在`<tbody>`内某一行启用鼠标悬停高亮换色
+5. class="table-condensed"紧凑表格
 6. 以上为特有样式
 
 ### 5.4.1. 表格<tr>, <th> 和 <td> 类
@@ -183,7 +183,7 @@ BootStrap
 4. class="info" 信息变化
 5. class="warning" 提醒
 6. class="danger" 紧急/错误
-7. `<div class="table-responsive"><table></div>`响应式表格，让表格水平滚动以适应小型设备（小于 768px）
+7. `<div class="table-responsive"><table></div>`响应式表格，让表格水平滚动以适应小型设备(小于 768px)
 
 ## 5.5. BootStrap表单
 1. 垂直表单 `<form role="form">`
@@ -249,7 +249,7 @@ BootStrap
 ## 5.6. BootStrap图片
 1. .img-rounded：添加 border-radius:6px 来获得图片圆角
 2. .img-circle：添加 border-radius:50% 来让整个图片变成圆形
-3. .img-thumbnail：添加一些内边距（padding）和一个灰色的边框
+3. .img-thumbnail：添加一些内边距(padding)和一个灰色的边框
 4. `<img src="…" class="img-circle">`
 
 ## 5.7. 布局组件
@@ -276,5 +276,5 @@ BootStrap
 ## 5.8. BootStrap插件
 1. Bootstrap 自带 12 种 jQuery 插件，扩展了功能，可以给站点添加更多的互动
 2. 单独引用插件。使用 Bootstrap 的个别的 *.js 文件。一些插件和 CSS 组件依赖于其他插件。
-3. 编译（同时）引用插件。使用 bootstrap.js 或压缩版的bootstrap.min.js。(不必同时引入)
+3. 编译(同时)引用插件。使用 bootstrap.js 或压缩版的bootstrap.min.js。(不必同时引入)
 4. 明确之间的关系

@@ -130,7 +130,7 @@ lecture04-网络层原理与技术
 
 ## 1.1. 第三层职责
 1. 通过网络移动数据：不同网段之间的通信，不同的广播域，两个广播域之间的进行了划分，互不干扰，不是广播的通信以及对另一个网段的广播需要能传达给对方。
-2. 使用分层寻址方案（与MAC寻址相反，后者平坦）
+2. 使用分层寻址方案(与MAC寻址相反，后者平坦)
 3. 细分网络并控制流量(flow)：一步步进行细化，越近了解的越多:IP地址是一致的，也就是可以忽略物理层的不同。(具体原因在开头已经分析过了)
 4. 减少交通拥堵，基于IP做分段和传达，用来减少拥塞
 5. 与其他网络交谈
@@ -262,9 +262,9 @@ lecture04-网络层原理与技术
 
 ### 2.4.2. 主机的数量
 1. 每个类别的最大主机数量各不相同。(不包含网络号)
-   1. A类拥有16,777,214个可用主机（2<sup>24</sup> – 2）
-   2. Class B has 65,534 available hosts (2<sup>16</sup> – 2) B类具有65,534个可用主机（2<sup>16</sup> – 2）
-   3. Class C has 254 available hosts (2<sup>8</sup> – 2) C类具有254个可用主机（2<sup>8</sup> –2）
+   1. A类拥有16,777,214个可用主机(2<sup>24</sup> – 2)
+   2. Class B has 65,534 available hosts (2<sup>16</sup> – 2) B类具有65,534个可用主机(2<sup>16</sup> – 2)
+   3. Class C has 254 available hosts (2<sup>8</sup> – 2) C类具有254个可用主机(2<sup>8</sup> –2)
 2. 为什么每一类地址中都要减去2？
    1. 每个网络中的第一个地址都保留用于该网络地址
    2. 最后一个地址是为广播地址保留的。
@@ -413,7 +413,7 @@ lecture04-网络层原理与技术
 1. Given 195.137.92.0 and needing 8 usable subnets, find the subnetwork numbers, the ranges of host numbers, and subnetwork broadcast numbers. 给定195.137.92.0并且需要8个可用子网，请找到子网号，主机号范围和子网广播号。
 2. IP Address is a class C. Default subnet mask is 255.255.255.0. We need to extend the network number by enough bits to give 8 usable subnets. IP地址是C类。默认子网掩码是255.255.255.0。 我们需要将网络号扩展足够的位数以提供8个可用子网。
 3. Stealing 2 bits yields 2 usable subnets, stealing 3 bits yields 6 usable subnets, so we must steal 4 bits to get 14 usable subnets, of which we needed 8. 借用2位会产生2个可用子网，借用3位会产生6个可用子网，因此我们借用4位才能获得14个可用子网，其中我们需要8个可用地址。
-4. This makes the subnet mask 255.255.255.240. So the Network number is 195.137.92.NNNN HHHH where Ns stand for network extension bits (subnets) and Hs stand for host numbers. 这将使子网掩码为255.255.255.240。 因此，网络号为195.137.92.NNNN HHHH，其中Ns代表网络扩展位（子网），Hs代表主机号。
+4. This makes the subnet mask 255.255.255.240. So the Network number is 195.137.92.NNNN HHHH where Ns stand for network extension bits (subnets) and Hs stand for host numbers. 这将使子网掩码为255.255.255.240。 因此，网络号为195.137.92.NNNN HHHH，其中Ns代表网络扩展位(子网)，Hs代表主机号。
 5. Next we must number the subnets; there are 16 combinations of 4 bit binary numbers but they retain their place value within the last octet. 接下来，我们必须为子网编号。 4位二进制数有16种组合，但它们在最后一个八位位组中保留其位置值。
 6. 借用4-6位都可以，因为并没有规定子网中主机数量，而为什么是6位是因为一个子网中最少用2位给主机。
 
@@ -686,7 +686,7 @@ lecture04-网络层原理与技术
 
 ## 5.6. 动态路由协议的分类：内部网关协议和外部网关协议
 1. 内部网关协议(Interior Gateway Protocols，RIP，IGRP，EIGRP，OSPF)：可在自治系统(autonomous system，大的单位或者管理方)中使用，该系统是一个主管部门下的路由器网络，例如公司(corporate)网络，学区的网络或政府机构的网络。
-2. 外部网关协议（Exterior Gateway Protocols，EGP，BGP）：用于在自治系统之间路由数据包。
+2. 外部网关协议(Exterior Gateway Protocols，EGP，BGP)：用于在自治系统之间路由数据包。
 3. 自治系统是**逻辑**的划分,而未必是物理层次的划分。
 4. 通过BGP，让其他自治系统了解自己的自治系统中的网段。
 5. 内部网关协议和外部网关协议的区别：
@@ -805,9 +805,9 @@ lecture04-网络层原理与技术
 >每一个位置都需要30个主机,有7个子网可以使用(全零可以使用，而全一不可以使用)
 
 ## 6.5. 支持VLSM的路由协议
-1. 开放式最短路径优先（OSPF）
-2. Integrated Intermediate System to Intermediate System (Integrated IS-IS) 集成中间系统到中间系统（集成IS-IS）
-3. 增强型内部网关路由协议（EIGRP）
+1. 开放式最短路径优先(OSPF)
+2. Integrated Intermediate System to Intermediate System (Integrated IS-IS) 集成中间系统到中间系统(集成IS-IS)
+3. 增强型内部网关路由协议(EIGRP)
 4. RIP v2
 5. 静态路由
 
@@ -881,7 +881,7 @@ lecture04-网络层原理与技术
 3. 一般是从主机多大到主机少(路由间网络)进行划分
 
 ## 6.9. 路由聚集(Route Aggregation)
-1. 使用无类域间路由（CIDR，Classless InterDomain Routing）和VLSM不仅可以防止地址浪费，而且还可以促进路由聚合或汇总。
+1. 使用无类域间路由(CIDR，Classless InterDomain Routing)和VLSM不仅可以防止地址浪费，而且还可以促进路由聚合或汇总。
 2. 多个路由条目汇聚成小的路由条目
 3. 比如如下图就是讲3个/24的子网合并成一个/16的网络高速远端
 4. 优点:聚集之后我们只需要知道一个网段就可以，也就是远端的路由表就会变少
@@ -930,13 +930,13 @@ lecture04-网络层原理与技术
 2. 差错报告报文:一般这种类型会多一些
 
 ## 7.3. 目的站不可到达
-1. **网络**不可到达（net unreachable）
-2. **主机**不可到达（host unreachable）
-3. **协议**不可到达（protocol unreachable）
-4. **端口**不可到达（port unreachable）
-5. **源路由选择**不能完成（source route failed）
-6. 目的网络**不可知**（unknown destination network）
-7. 目的主机**不可知**（unknown destination host）
+1. **网络**不可到达(net unreachable)
+2. **主机**不可到达(host unreachable)
+3. **协议**不可到达(protocol unreachable)
+4. **端口**不可到达(port unreachable)
+5. **源路由选择**不能完成(source route failed)
+6. 目的网络**不可知**(unknown destination network)
+7. 目的主机**不可知**(unknown destination host)
 8. 不可知是完全不可以解析，不可达是可以解析但是不可以到达
 
 ## 7.4. ICMP 差错报告报文的数据字段的内容
@@ -950,7 +950,7 @@ lecture04-网络层原理与技术
 1. 对 ICMP 差错报告报文不再发送 ICMP 差错报告报文
 2. 对第一个分片的数据报片的所有后续数据报片都不发送 ICMP 差错报告报文(就是每次传送只要发送一次就够了)
 3. 对具有多播地址的数据报都不发送 ICMP 差错报告报文
-4. 对具有特殊地址（如127.0.0.0或0.0.0.0）的数据报不发送 ICMP 差错报告报文
+4. 对具有特殊地址(如127.0.0.0或0.0.0.0)的数据报不发送 ICMP 差错报告报文
    1. 127.0.0.0:逻辑回路地址
    2. 0.0.0.0:确认路由地址
 

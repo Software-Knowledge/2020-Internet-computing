@@ -21,7 +21,7 @@ Lecture06-应用层
   - [3.2. 超文本传输协议 (HTTP，HyperText Transfer Protocol)](#32-超文本传输协议-httphypertext-transfer-protocol)
     - [3.2.1. 统一资源定位符 URL(Uniform Resource Locator)](#321-统一资源定位符-urluniform-resource-locator)
     - [3.2.2. HTTP](#322-http)
-    - [3.2.3. HTTP 的报文结构（请求报文）](#323-http-的报文结构请求报文)
+    - [3.2.3. HTTP 的报文结构(请求报文)](#323-http-的报文结构请求报文)
     - [3.2.4. HTTP 请求报文的一些方法](#324-http-请求报文的一些方法)
   - [3.3. HTML(HyperText Markup Language)](#33-htmlhypertext-markup-language)
   - [3.4. FTP(File Transfer Protocol) and TFTP(Trivial File Transfer Protocol)](#34-ftpfile-transfer-protocol-and-tftptrivial-file-transfer-protocol)
@@ -32,9 +32,9 @@ Lecture06-应用层
     - [3.6.1. MIME(Multipurpose Internet Mail Extensions) 增加 5 个新的邮件首部](#361-mimemultipurpose-internet-mail-extensions-增加-5-个新的邮件首部)
     - [3.6.2. MIME(Multipurpose Internet Mail Extensions) 和 SMTP 的关系](#362-mimemultipurpose-internet-mail-extensions-和-smtp-的关系)
   - [3.7. SNMP(Simple Network Management Protocol) 简单网络管理协议](#37-snmpsimple-network-management-protocol-简单网络管理协议)
-  - [3.8. 域名系统（DNS, Domain Name System）](#38-域名系统dns-domain-name-system)
+  - [3.8. 域名系统(DNS, Domain Name System)](#38-域名系统dns-domain-name-system)
     - [3.8.1. Domain Name 域名](#381-domain-name-域名)
-    - [3.8.2. TLD (Top Level Domain) TLD（顶级域）](#382-tld-top-level-domain-tld顶级域)
+    - [3.8.2. TLD (Top Level Domain) TLD(顶级域)](#382-tld-top-level-domain-tld顶级域)
     - [3.8.3. Domain Name Server 域名服务器](#383-domain-name-server-域名服务器)
     - [3.8.4. 结合域名服务器查找IP地址](#384-结合域名服务器查找ip地址)
   - [3.9. 应用层:沟通的方式](#39-应用层沟通的方式)
@@ -106,16 +106,16 @@ Lecture06-应用层
 
 ## 2.1. 数据格式
 1. 想象两个不同(dissimilar)的系统。
-   1. 一种使用扩展二进制编码的十进制交换码（EBCDIC,Extended Binary Coded Decimal Interchange Code）格式化文本
-   2. 另一种使用**美国信息交换标准码（ASCII）**格式化文本
+   1. 一种使用扩展二进制编码的十进制交换码(EBCDIC,Extended Binary Coded Decimal Interchange Code)格式化文本
+   2. 另一种使用**美国信息交换标准码(ASCII)**格式化文本
    3. 选择大家都能识别的编码形式传输，保证大家都能理解
 
 2. 第6层提供了这两种不同类型的代码之间的转换
 
 ### 2.1.1. 图形文件格式
 1. 互联网通常使用两种二进制文件格式来显示图像：
-   1. 图形交换格式（GIF，Graphic Interchange Format）
-   2. 联合图像专家组（JPEG，Joint Photographic Experts Group）。
+   1. 图形交换格式(GIF，Graphic Interchange Format)
+   2. 联合图像专家组(JPEG，Joint Photographic Experts Group)。
 2. 任何具有读取器的GIF和JPEG文件格式的计算机都可以读取这些文件类型，而与计算机的类型无关。
 
 ### 2.1.2. 多媒体文件格式
@@ -131,7 +131,7 @@ Lecture06-应用层
 ![](img/lec06/5.png)
 
 1. 上图中各层的一些协议和使用：对端口进行管理
-2. 应用程序层（最接近用户）支持应用程序的通信组件。
+2. 应用程序层(最接近用户)支持应用程序的通信组件。
 
 ## 3.1. 应用层职责
 1. 确定并确定预期的通信合作伙伴的可用性
@@ -171,7 +171,7 @@ Lecture06-应用层
 4. 万维网浏览器就是一个 HTTP 客户，而在万维网服务器等待 HTTP 请求的进程常称为HTTP daemon， 有的文献将它缩写为 HTTPD。
 5. HTTP daemon 在收到 HTTP 客户的请求后，把所需的文件返回给 HTTP 客户。
 
-### 3.2.3. HTTP 的报文结构（请求报文）
+### 3.2.3. HTTP 的报文结构(请求报文)
 ![](img/lec06/7.png)
 
 1. 报文由三个部分组成，即开始行、首部行和实体主体。
@@ -184,28 +184,28 @@ Lecture06-应用层
    4. 5xx:服务器内部错误
 
 ### 3.2.4. HTTP 请求报文的一些方法
-| 方法（操作） | 意义                            |
+| 方法(操作) | 意义                            |
 | ------------ | ------------------------------- |
 | OPTION       | 请求一些选项的信息              |
 | GET          | 请求读取由URL所标志的信息       |
 | HEAD         | 请求读取由URL所标志的信息的首部 |
-| POST         | 给服务器添加信息（例如，注释）  |
+| POST         | 给服务器添加信息(例如，注释)  |
 | PUT          | 在指明的URL下存储一个文档       |
 | DELETE       | 删除指明的URL所标志的资源       |
 | TRACE        | 用来进行环回测试的请求报文      |
 | CONNECT      | 用于代理服务器                  |
 
 ## 3.3. HTML(HyperText Markup Language)
-1. 定义了许多用于排版的命令（标签）。
+1. 定义了许多用于排版的命令(标签)。
 2. HTML 文档是一种可以用任何文本编辑器创建的 ASCII 码文件。
 3. 仅当HTML文档是以.html或.htm为后缀时，浏览器才对此文档的各种标签进行解释。
 4. 当浏览器从服务器读取HTML文档，针对HTML文档中的各种标签，根据浏览器所使用的显示器的尺寸和分辨率大小，重新进行排版并恢复出所读取的页面。
-5. HTML用一对标签（一个开始标签和一个结束标签）或几对标签来标识一个元素。
+5. HTML用一对标签(一个开始标签和一个结束标签)或几对标签来标识一个元素。
 
 ## 3.4. FTP(File Transfer Protocol) and TFTP(Trivial File Transfer Protocol)
 1. FTP是一种可靠的，面向连接的服务，它使用TCP传输文件。
-   1.  FTP首先在客户端和服务器（端口21）之间建立**控制连接**
-   2. 然后，建立第二个连接，这是计算机之间通过其传输数据的链接。（端口20）
+   1.  FTP首先在客户端和服务器(端口21)之间建立**控制连接**
+   2. 然后，建立第二个连接，这是计算机之间通过其传输数据的链接。(端口20)
 2. TFTP是使用UDP的无连接服务(简化的FTP)
    1. 体积小，易于实施。更加方便
    2. 例如。 TFTP在路由器上用于传输配置文件和Cisco IOS映像
@@ -213,7 +213,7 @@ Lecture06-应用层
 3. 互联网早期的时候，文件传输量是很大的。
 
 ### 3.4.1. 主进程工作步骤
-1. 打开熟知端口（端口号为 21），使客户进程能够连接上。(可以修改熟知端口)
+1. 打开熟知端口(端口号为 21)，使客户进程能够连接上。(可以修改熟知端口)
 2. 等待客户进程发出连接请求。
 3. 启动从属进程来处理客户进程发来的请求。从属进程对客户进程的请求处理完毕后即终止，但从属进程在运行期间根据需要还可能创建其他一些子进程。
    1. 控制连接
@@ -227,27 +227,27 @@ Lecture06-应用层
 [01] ftp nic.ddn.mil
 本地FTP发送的连接成功信息
 [02] connected to nic.ddn.mil
-从远地服务器返回的信息，220表示“服务就绪”
+从远地服务器返回的信息，220表示"服务就绪"
 [03] 220 nic FTP server (Sunos 4.1)ready.
-本地FTP提示用户键入名字。用户键入的名字表示“匿名”。用户只需键入anonymous即可(匿名)
+本地FTP提示用户键入名字。用户键入的名字表示"匿名"。用户只需键入anonymous即可(匿名)
 [04] Name: anonymous
-数字331表示“用户名正确”，需要口令
+数字331表示"用户名正确"，需要口令
 [05] 331 Guest login ok, send ident as password.
 本地FTP提示用户键入口令。用户这时可键入guest作为匿名的口令，也可以键入自己的电子邮件地址，即耶鲁大学数学系名为xyz的主机上的abd(匿名密码是随意输入的)
 [06] Password: abc@xyz.math.yale.edu
 数字230表示用户已经注册完毕
 [07] 230 Guest login ok, access restrictions apply.
-“ftp>"是FTP的提示信息。用户键入的是将目录改变为包含RFC文件的目录
+"ftp>"是FTP的提示信息。用户键入的是将目录改变为包含RFC文件的目录
 [08] ftp> cd rfc
-字符“CWD"是FTP的标准命令，表示Change Working Directory
+字符"CWD"是FTP的标准命令，表示Change Working Directory
 [09] 250 CWD command successful.
 用户要求将名为rfc1261.txt的文件复制到本地主机上，并改名为nicinfo(get 获取到本地)
 [10] ftp> get rfc1261.txt nicinfo
-字符PORT是FTP的标准命令，表示要建立数据连接。200表示“命令正确”
+字符PORT是FTP的标准命令，表示要建立数据连接。200表示"命令正确"
 [11] 200 PORT command successful.
-数字150表示“文件状态正确，即将建立数据连接”
+数字150表示"文件状态正确，即将建立数据连接"
 [12] 150 ASCII data connection for rfc1261.txt (128.36.12.27,1401) (4318 bytes).
-数字226是“释放数据连接”，现在一个新的本地文件已经生成。
+数字226是"释放数据连接"，现在一个新的本地文件已经生成。
 [13] 226 ASCII Transfer complete. local: nicinfo remote: rfc1261.txt 4488 bytes received in 15 seconds (0.3 Kbytes/s).
 用户键入退出命令。
 [14] ftp> quit
@@ -266,7 +266,7 @@ Lecture06-应用层
 
 ## 3.6. SMTP(Simple Mail Transfer Protocol) and POP(Post Office Protocol)
 1. 电子邮件服务器使用SMTP发送和POP接收邮件相互通信。
-   1. SMTP (Simple Mail Transfer Protocol) SMTP（简单邮件传输协议）邮件发送，登录发送等操作
+   1. SMTP (Simple Mail Transfer Protocol) SMTP(简单邮件传输协议)邮件发送，登录发送等操作
    2. POP3 (Post Office Protocol version 3) 邮件接收，邮件到达邮件服务端，由客户端和服务端联系接收邮件。
 
 ![](img/lec06/9.png)
@@ -288,7 +288,7 @@ Lecture06-应用层
 2. 很多的文件(附件)并不是ASCII码的，我们需要用MIME将对应的文件进行转换(扩充)。过程如上图
 
 ## 3.7. SNMP(Simple Network Management Protocol) 简单网络管理协议
-1. 简单网络管理协议（SNMP）是一种应用程序层协议，可简化网络设备之间的管理信息交换。
+1. 简单网络管理协议(SNMP)是一种应用程序层协议，可简化网络设备之间的管理信息交换。
 
 ![](img/lec06/11.png)
 
@@ -296,8 +296,8 @@ Lecture06-应用层
 3. 通过管理数据库(MIB)进行信息交流
 4. 使用UDP通过广播进行实现。
 
-## 3.8. 域名系统（DNS, Domain Name System）
-1. 域名系统（DNS）是网络上的服务，该服务管理域名并响应客户端将域名转换为关联IP地址的请求。
+## 3.8. 域名系统(DNS, Domain Name System)
+1. 域名系统(DNS)是网络上的服务，该服务管理域名并响应客户端将域名转换为关联IP地址的请求。
 
 ![](img/lec06/12.png)
 
@@ -310,12 +310,12 @@ Lecture06-应用层
 2. 越靠后域名级别越高
 3. www就是对应到主机群
 
-### 3.8.2. TLD (Top Level Domain) TLD（顶级域）
-1. 国家TLD（nTLD）
+### 3.8.2. TLD (Top Level Domain) TLD(顶级域)
+1. 国家TLD(nTLD)
    1. .cn(CHINA) 中国
    2. .us (United States) 美国
    3. .uk (United kingdom), etc. 英国等等
-2. 通用TLD（gTLD），最早的域包括：
+2. 通用TLD(gTLD)，最早的域包括：
    1. .com Enterprises and companies 企业和公司
    2. .net Network services providers 网络服务提供者
    3. .org Nonprofit organizations 非盈利组织
@@ -326,17 +326,17 @@ Lecture06-应用层
 3. Infrastructure domain 基础设施领域
    1. Only one: arpa, for resolving domain names reversely 仅一个：arpa，用于反向解析域名
 4. Recently, new TLD domain added:
-   1. .aero（航空运输企业）
-   2. .biz （公司和企业）
-   3. .cat （加泰隆人的语言和文化团体）
-   4. .coop（合作团体）
-   5. .info（各种资讯）
-   6. .jobs（人力资源管理者）
-   7. .mobi（移动产品与服务的用户和提供者）
-   8. .museum （博物馆）
-   9. .name   （个人）
-   10. .pro （经过认证的专业人员）
-   11. .travel  （旅游业）
+   1. .aero(航空运输企业)
+   2. .biz (公司和企业)
+   3. .cat (加泰隆人的语言和文化团体)
+   4. .coop(合作团体)
+   5. .info(各种资讯)
+   6. .jobs(人力资源管理者)
+   7. .mobi(移动产品与服务的用户和提供者)
+   8. .museum (博物馆)
+   9. .name   (个人)
+   10. .pro (经过认证的专业人员)
+   11. .travel  (旅游业)
 
 ### 3.8.3. Domain Name Server 域名服务器
 ![](img/lec06/14.png)
@@ -413,7 +413,7 @@ Lecture06-应用层
 
 ![](img/lec06/19.png)
 
-- DHCP Client选择一个DHCP Offer报文（一般 选择最先收到的DHCP Offer报文），向网络发送一个DHCP Request广播数据包，所有的Server进行同步
+- DHCP Client选择一个DHCP Offer报文(一般 选择最先收到的DHCP Offer报文)，向网络发送一个DHCP Request广播数据包，所有的Server进行同步
 
 #### 3.10.2.5. 租约确认阶段
 
@@ -456,7 +456,7 @@ Lecture06-应用层
 #### 3.10.4.1. DHCP欺骗原理
 1. 客户端以广播的方式来寻找服务器，并且只接收第一个到达的服务器提供的网络配置参数。
 2. 非授权的DHCP服务器先应答，客户端最后获得的网络参数即是非授权的，客户端即被欺骗。(恶意服务器把自己作为默认网关)
-3. 在实际应用DHCP的网络中，基本上都会采用DHCP中继，因此本网络的非授权DHCP服务器一般都会先于其余网络的授权DHCP服务器的应答（由于网络传输的延迟），在这样的应用中，DHCP欺骗更容易完成。
+3. 在实际应用DHCP的网络中，基本上都会采用DHCP中继，因此本网络的非授权DHCP服务器一般都会先于其余网络的授权DHCP服务器的应答(由于网络传输的延迟)，在这样的应用中，DHCP欺骗更容易完成。
 
 #### 3.10.4.2. DHCP欺骗攻击
 
@@ -482,4 +482,4 @@ Lecture06-应用层
 1. 在交换机上启用DHCP Snooping功能 DHCP Snooping技术通过建立和维护DHCP Snooping绑定表过滤不可信任的DHCP信息:比如B的DHCP不能通过认证，交换机拒绝进行转发
    1. 在交换机的全局配置模式中启用DHCP Snooping:`switch (config)# ip dncp snooping`
    2. 在交换机的全局配置模式中开启需要启用DHCP Snooping 的VLAN":`switch (config)# ip dhcp snooping vlan vlan号`
-   3. 在端口配置子模式中将授权DHCP服务器所连的端口设为信任端口（缺省都是非信任的端口）:就是连接到DHCP Server的端口:`switch (config-if)# ip dhcp snooping trust`
+   3. 在端口配置子模式中将授权DHCP服务器所连的端口设为信任端口(缺省都是非信任的端口):就是连接到DHCP Server的端口:`switch (config-if)# ip dhcp snooping trust`

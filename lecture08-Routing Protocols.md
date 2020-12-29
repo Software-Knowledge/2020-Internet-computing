@@ -11,7 +11,7 @@ Lecture 08-Routing Protocols(RIP and OSPF)
     - [1.3.1. Verifying &Troubleshooting 验证与故障排除](#131-verifying-troubleshooting-验证与故障排除)
     - [1.3.2. `debug IP RIP`命令](#132-debug-ip-rip命令)
   - [1.4. RIP v1和RIP v2之间的区别](#14-rip-v1和rip-v2之间的区别)
-- [2. OSPF(single area) OSPF（单个区域）](#2-ospfsingle-area-ospf单个区域)
+- [2. OSPF(single area) OSPF(单个区域)](#2-ospfsingle-area-ospf单个区域)
   - [2.1. OSPF概述](#21-ospf概述)
   - [2.2. 路由信息](#22-路由信息)
   - [2.3. OSPF vs. RIP 差别](#23-ospf-vs-rip-差别)
@@ -53,7 +53,7 @@ Lecture 08-Routing Protocols(RIP and OSPF)
 2. RIP v1能够在多达六个等价路径上进行**负载平衡(Load Balancing)**，默认情况下为四个路径，最多6个，跳数相同才能完成负载均衡，跳数不同不满足条件
 3. RIP最初是在RFC 1058中指定的
 4. RIP v1具有以下限制：
-   1. 它不会在其更新中发送子网掩码信息:意味着必须用同样的子网掩码，不支持VLSM或无类域间路由（CIDR，Classless Interdomain Routing）。
+   1. 它不会在其更新中发送子网掩码信息:意味着必须用同样的子网掩码，不支持VLSM或无类域间路由(CIDR，Classless Interdomain Routing)。
    2. 它以255.255.255.255的广播形式发送更新:只能发给邻居，不能通过路由器转发。
    3. 它不支持身份验证(authentication):只要启动RIP就可以接受到信息，也就意味着只要接入网络并且启动RIP进程，就可以了解到整个网络拓扑
 
@@ -120,18 +120,18 @@ network 2.0.0.0
    2. 使用主播地址进行发送广播:特定给RIP接受，避免了接受后发现没有启动RIP进程耽误时间
    3. 需要身份认证才确定是否继续进行接收。
 
-# 2. OSPF(single area) OSPF（单个区域）
+# 2. OSPF(single area) OSPF(单个区域)
 
 ## 2.1. OSPF概述
-1. 开放最短路径优先（OSPF，Open Shortest Path First）是基于开放标准的链路状态路由协议。
-2. It is described in several standards of the Internet Engineering Task Force (IETF) Internet 网络工程任务组（IETF，Internet Engineering Task Force）的多个标准中对此进行了描述:The most recent description is RFC 2328. 最新的描述是RFC 2328。(已经不是最新的了)
+1. 开放最短路径优先(OSPF，Open Shortest Path First)是基于开放标准的链路状态路由协议。
+2. It is described in several standards of the Internet Engineering Task Force (IETF) Internet 网络工程任务组(IETF，Internet Engineering Task Force)的多个标准中对此进行了描述:The most recent description is RFC 2328. 最新的描述是RFC 2328。(已经不是最新的了)
 3. 与RIP v1和RIP v2相比，OSPF正在成为首选的IGP协议，因为它具有可伸缩性。
 4. 和RIP相比优势比较大，很多网络公司在研究OSPF的优化。
 
 ## 2.2. 路由信息
 1. 链接的状态是对接口及其与其相邻路由器的关系的描述。
 2. 链接状态的集合形成一个**链接状态数据库**，有时也称为**拓扑数据库**。
-3. 路由器应用**Dijkstra最短路径优先**（SPF）算法来构建以自己为根的SPF树。
+3. 路由器应用**Dijkstra最短路径优先**(SPF)算法来构建以自己为根的SPF树。
 4. 路由器通过SPF树计算最佳路径，然后选择最佳路径并将其放置在**路由表**中。
 
 ## 2.3. OSPF vs. RIP 差别
@@ -196,7 +196,7 @@ network 2.0.0.0
    2. 区域0或区域0.0.0.0
 2. 区域0：区域编号为0的单个区域
 3. OSPF使用2级分层模型：逻辑上必须是2层结构，而物理实现上可能有一定的差异，如果更多需要进行逻辑配置。
-4. 在多区域OSPF网络中，要求所有区域都连接到区域0（主干）
+4. 在多区域OSPF网络中，要求所有区域都连接到区域0(主干)
 5. Example:Area是和端口相关(注意端口)
 
 ![](img/lec08/20.png)
@@ -208,7 +208,7 @@ network 2.0.0.0
 1. OSPF使用邻居的邻接关系(Adjacencies)来全面了解网络。
 2. OSPF操作包括五个步骤：
    1. 步骤1：建立邻接关系
-   2. 步骤2：选择DR和BDR（如果需要）:多路复用的时候才需要
+   2. 步骤2：选择DR和BDR(如果需要):多路复用的时候才需要
    3. 步骤3：发现路线
    4. 步骤4：选择适当的路线
    5. 步骤5：维护路线信息
@@ -274,7 +274,7 @@ network 2.0.0.0
 2. 控制(govern)OSPF hello数据包交换的规则称为Hello协议。
 3. Hello数据包的地址为224.0.0.5。
 4. 默认情况下，广播多路访问和点对点网络上**每10秒**发送一次Hello报文。
-5. 在连接到NBMA网络的接口（例如帧中继）上，默认时间是30秒。
+5. 在连接到NBMA网络的接口(例如帧中继)上，默认时间是30秒。
 6. 保持心跳，确定还活着。Hello几乎是空报文，给所有跑OSPF的路由器发送
 
 ### 2.11.2. OSPF报文头部
@@ -323,7 +323,7 @@ network 2.0.0.0
 3. 发现网络类型
    1. 如果是多路复用网络，进入DR/BDR选举过程，然后进入步骤2。
    2. 如果是点对点或点对多点网络，则不会举行DR/BDR选举过程，并跳过步骤2。
-   3. 如果hello数据包标头中的DR/BDR字段已被占用（即DR / BDR对已经存在），则不会进行DR/BDR选举，并跳过步骤2。
+   3. 如果hello数据包标头中的DR/BDR字段已被占用(即DR / BDR对已经存在)，则不会进行DR/BDR选举，并跳过步骤2。
 4. 如果对方的DP/BDP优于我的DP/BDP，则接受对方的。
 
 ![](img/lec08/28.png)
@@ -331,9 +331,9 @@ network 2.0.0.0
 >Hello Interval:如果不同不能建立关系,Hello报文包含了DR信息在内的必要的参数
 
 ### 2.13.2. 步骤2：选举DR和BDR
-1. 如果没有其他路由器联机，则该路由器将成为DR。下一个要“启动”的路由器将是BDR。
-2. 如果多个路由器（两个或更多）同时联机，则
-   1. 优先级最高的路由器成为DR：优先级为零表示“从不DR”
+1. 如果没有其他路由器联机，则该路由器将成为DR。下一个要"启动"的路由器将是BDR。
+2. 如果多个路由器(两个或更多)同时联机，则
+   1. 优先级最高的路由器成为DR：优先级为零表示"从不DR"
    2. 如果存在平局，则具有最高路由器ID的路由器将成为DR：路由器ID是最高的环回或接口IP地址
    3. 具有第二高优先级或路由器ID的路由器成为BDR
 3. 如果DR无效，则BDR变为DR。
@@ -343,9 +343,9 @@ network 2.0.0.0
 
 ### 2.13.3. 步骤3：发现路线
 1. 这一步从Ex Start状态转换到完整状态
-2. 路由器确定“主/从(master/slave)”关系
+2. 路由器确定"主/从(master/slave)"关系
 3. 多路复用网络中的DR/BDR交换LSA，并且所有其他DR将其Type 2 DBD发送给DR/BDR。
-4. 如有必要，路由器可以通过发送请求更多信息的LSR进入负载状态:所有路由器必须在“加载状态”中等待，直到完全更新请求的路由器。
+4. 如有必要，路由器可以通过发送请求更多信息的LSR进入负载状态:所有路由器必须在"加载状态"中等待，直到完全更新请求的路由器。
 5. 路由器现在进入完整状态
 
 ### 2.13.4. 步骤4：选择适当的路线
@@ -358,9 +358,9 @@ network 2.0.0.0
 ### 2.13.5. 步骤5:维护路由信息
 1. 常规的Hello交换是OSPF用于检测新邻居或故障(downed)邻居的机制。
 2. 根据网络的类型，Hello数据包以不同的默认间隔发送。(确定对方是不是还好)
-   1. 对于速度为T1（1.544 Mbps）或更高的链接，每10秒：广播多路访问和点对点链接
+   1. 对于速度为T1(1.544 Mbps)或更高的链接，每10秒：广播多路访问和点对点链接
    2. 对于小于T1的链接，每30秒：非广播多路访问链接
-   3. “死间隔”是问候间隔的四倍。(如果在这样子对方还没有成功则对方死了)
+   3. "死间隔"是问候间隔的四倍。(如果在这样子对方还没有成功则对方死了)
 
 ### 2.13.6. 链路状态变化出现
 
@@ -409,7 +409,7 @@ Router (config-if) # ip address address subnet-mask
 1. 为OSPF路由器ID添加稳定性
    1. 必须在OSPF进程开始之**前**配置回环接口:会涉及到主从关系确定和DR的选举
    2. 配置环回地址时，请使用/32掩码以避免潜在的路由问题
-   3. I建议您在基于OSPF的网络中的所有关键路由器上使用环回地址（专用或公用地址）。
+   3. I建议您在基于OSPF的网络中的所有关键路由器上使用环回地址(专用或公用地址)。
    4. 一旦配置立刻生效，不需要no shutdown的命令即可。
 
 
@@ -430,7 +430,7 @@ Router (config-if) # ip address address subnet-mask
 
 ## 2.17. OSPF成本 = 指标
 1. Cost适用于所有路由器连接路径
-2. 16位数字（1 – 65,535）
+2. 16位数字(1 – 65,535)
 3. 较低的Cost->更理想
 4. 路径决定是基于路径的总成本。
 5. 指标受到带宽的影响
@@ -441,7 +441,7 @@ Router (config-if) # ip address address subnet-mask
 ### 2.17.1. OSPF路径COST
 1. 连接到同一链接的所有接口必须就该链接的成本达成一致。否则，该链接将被视为关闭
    1. 意味着可以手动调整优先级
-   2. 串行链路的Cisco路由器默认成本为1784（56Kbps带宽）:`Router (config-if) # ip ospf cost number(1-65536)`
+   2. 串行链路的Cisco路由器默认成本为1784(56Kbps带宽):`Router (config-if) # ip ospf cost number(1-65536)`
    3. 如果链路是更低速的，你必须为其确定真实的链路速度。
    4. If the line is a slower speed, you must specify the real link speed: `Router (config-if) # bandwidth number(Kbps)`
 2. 例子：
@@ -454,8 +454,8 @@ Router (config-if) # ip address address subnet-mask
 
 ### 2.17.2. 设置OSPF计时器
 1. OSPF区域中的所有路由器必须在相同的hello间隔和相同的死间隔上达成一致，默认情况下：
-   1. T1或更高链接（广播）为10秒
-   2. 慢于T1的链接为30秒（非广播）
+   1. T1或更高链接(广播)为10秒
+   2. 慢于T1的链接为30秒(非广播)
    3. 死亡间隔= 4 *问候间隔
 2. 更改问候间隔的命令
 

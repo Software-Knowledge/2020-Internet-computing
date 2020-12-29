@@ -18,7 +18,7 @@
 | ASCII | American Standard Code for Information Interchange | 美国信息交换标准码 | |
 | AD | Administrative Distance | 管理距离 | |
 | ABR | Area Border Router | 区域边界路由器 | |
-| ADSL | Aysmmetric Digital Subscriber Line | 非对称数字用户线路 | 用数字技术对现有的模拟电话用户线进行改造，使它能承载宽带数字业务。ADSL下行带宽远远大于上行带宽，因此得名“非对称”。 |
+| ADSL | Aysmmetric Digital Subscriber Line | 非对称数字用户线路 | 用数字技术对现有的模拟电话用户线进行改造，使它能承载宽带数字业务。ADSL下行带宽远远大于上行带宽，因此得名"非对称"。 |
 | ATU | Access Termination Unit | 接入端接单元 | |
 | ACL | Access Control Lists | 访问控制列表 | 是路由器和交换机接口的指令列表，用来控制端口进出的数据包 |
 | ACK | Acknowledgement | 最大报文段长度 | 在数据通信中，接收站发给发送站的一种传输类控制字符，表示发来的数据已确认接收无误 |
@@ -46,13 +46,13 @@
 | CDM | Code Division Multiplexing | 码分复用 | 常用的名词是码分多址 CDMA(Code Division Multiple Access)靠不同的编码来区分各路原始信号的一种复用方式 |
 | CDMA | Code Division Multiple Access | 码分多址 | 是一种多路方式，多路信号只占用一条信道 |
 | CSMA/CA | Carrier Sense Multiple Access with Collision Avoid | 带有冲突避免的载波侦听多路访问 | |
-| CSMA/CD | Carrier Sense Multiple Access with Collision Detection | 带冲突检测的载波侦听多路访问 | “多点接入”就是说明这是总线型网络，“载波监听”就是用电子技术检测总线上有没有其他计算机也在发送。“碰撞检测”也就是“边发送边监听”，即适配器边发送数据边检测信道上的信号电压的变化情况，以便判断自己在发送数据时其他站是否也在发送数据。 |
+| CSMA/CD | Carrier Sense Multiple Access with Collision Detection | 带冲突检测的载波侦听多路访问 | "多点接入"就是说明这是总线型网络，"载波监听"就是用电子技术检测总线上有没有其他计算机也在发送。"碰撞检测"也就是"边发送边监听"，即适配器边发送数据边检测信道上的信号电压的变化情况，以便判断自己在发送数据时其他站是否也在发送数据。 |
 | CRC | Cyclic Redundancy Check | 循环冗余校验 | |
 | CTS | Clear To Send | 清除发送 | |
-| CIDR | Classless Inter-Domain Routing  | 无类域间路由选择 | 无类域间路由，是一个在Internet上创建附加地址的方法，这些地址提供给服务提供商（ISP），再由ISP分配给客户,(Tip: VLSM+CIDR就形成了划分子网时出现如  192.168.1.0/28  子网掩码255.255.255.240这样的形式) |
+| CIDR | Classless Inter-Domain Routing  | 无类域间路由选择 | 无类域间路由，是一个在Internet上创建附加地址的方法，这些地址提供给服务提供商(ISP)，再由ISP分配给客户,(Tip: VLSM+CIDR就形成了划分子网时出现如  192.168.1.0/28  子网掩码255.255.255.240这样的形式) |
 | CDP | Cisco Discovery Protocol | 思科发现协议 | |
 | CPE | Customer Premise Equipment | 用户终端设备 | |
-| CHAP | Challenge Handshake Authentication Protocol | 挑战握手认证协议 | 链路建立阶段结束之后，认证者向对端点发送“challenge”消息;对端点用经过单向哈希函数计算出来的值做应答;认证者根据它自己计算的哈希值来检查应答，如果值匹配，认证得到承认，否则连接应该终⽌止;经过一定的随机间隔，认证者发送一个新 challenge 给端点，重复步骤 1- 3。 |
+| CHAP | Challenge Handshake Authentication Protocol | 挑战握手认证协议 | 链路建立阶段结束之后，认证者向对端点发送"challenge"消息;对端点用经过单向哈希函数计算出来的值做应答;认证者根据它自己计算的哈希值来检查应答，如果值匹配，认证得到承认，否则连接应该终⽌止;经过一定的随机间隔，认证者发送一个新 challenge 给端点，重复步骤 1- 3。 |
 
 # 4. D
 
@@ -119,9 +119,9 @@
 
 | 英文简称 | 英文全称 | 中文全称 | 备注 |
 | -------- | -------- | -------- | ---- |
-| HTTP | Hypertext Transfer Protocol | 超文本传输协议 | 物理层的 PDU是数据位（bit），数据链路层的 PDU是数据帧（frame），网络层的PDU是数据包（packet），传输层的 PDU是数据段（segment），其他更高层次的PDU是数据（data） |
+| HTTP | Hypertext Transfer Protocol | 超文本传输协议 | 物理层的 PDU是数据位(bit)，数据链路层的 PDU是数据帧(frame)，网络层的PDU是数据包(packet)，传输层的 PDU是数据段(segment)，其他更高层次的PDU是数据(data) |
 | HTML | HyperText Markup Language | 超文本标记语言 | |
-| HDLC | High-Level Data Link Control | 高级数据链路控制 | 是一个在同步网上传输 数据、面向比特的数据链路层协议，它是由国际标准化组织（ISO）根据IBM公司的SDLC（Synchronous Data Link Control）协议扩展开发而成的 |
+| HDLC | High-Level Data Link Control | 高级数据链路控制 | 是一个在同步网上传输 数据、面向比特的数据链路层协议，它是由国际标准化组织(ISO)根据IBM公司的SDLC(Synchronous Data Link Control)协议扩展开发而成的 |
 | HFC | Hybird Fiber Coax | 混合光纤同轴电缆 | 是在目前覆盖面很广的有线电视网 CATV 的基础上开发的一种居民宽带接入网(没错，就是有线通) |
 | HDSL | High Speed Digital Subscriber Line | 高速数字用户线 | |
 
@@ -135,7 +135,7 @@
 | IP | Internet Protocol | 网际互联协议 | 由network ID与host ID组成,0-127 Class A address,128-191 Class B address,192-223 Class C address,224-239 Class D-Multicast,240-255 Class E-Research |
 | ISDN | Integrated Services Digital Network | 综合业务数字网 | 以电话综合数字网为基础发展成的通信网，能提供端到端的数字连接，用来承载包括话音和非话音在内的多种电信业务。 |
 | IEEE | Institute of Electrica and Electronics Engineers | 电气与电子工程师学会 | IEEE主要关注以太网技术标准的制订。IEEE的工作重点是以传统以太网为基础，研究制定应用于城域网的新型以太网技术标准 |
-| IEEE MAC Sub_layer | Institute of Electrica and Electronics Engineers MAC Sub_layer | 电气与电子工程师学会的MAC子层划分 | IEEE将数据链路层分成LLC （Logical Link Control，逻辑链路控制）和MAC（Media Access Control，介质访问控制）两个子层。MAC控制各个host对media的使用权。MAC子层定义了frame如何在物理线上运输，处理物理地址，定义网络拓扑和网线使用规则。|
+| IEEE MAC Sub_layer | Institute of Electrica and Electronics Engineers MAC Sub_layer | 电气与电子工程师学会的MAC子层划分 | IEEE将数据链路层分成LLC (Logical Link Control，逻辑链路控制)和MAC(Media Access Control，介质访问控制)两个子层。MAC控制各个host对media的使用权。MAC子层定义了frame如何在物理线上运输，处理物理地址，定义网络拓扑和网线使用规则。|
 | IGP | Interior Gateway Protocols | 内部网关协议 | 是一个在自治网络内网关间交换路由的协议 |
 | IGRP | Interior Gateway Routing Protocol | 内部网关路由协议 | |
 | ICMP | Internet Control Message Protocol | 因特网控制报文协议 | 是为了提高IP数据报交付成功的机会，允许主机或路由器报告差错情况和提供有关异常情况报告的协议，运行在IP层 |
@@ -203,8 +203,8 @@
 
 | 英文简称 | 英文全称 | 中文全称 | 备注 |
 | -------- | -------- | -------- | ---- |
-| OSI | Open System Interconnection | 开发式系统互联 | OSI将计算机网络体系结构(architecture）划分为以下七层：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层 |
-| OSI/RM | Open System Interconnection Reference Model | 开放式系统互联引用 | “开放”是指非独家垄断的，因此只要遵循OSI标准，一个系统就可以和位于世界上任何地方的，也遵循这同一标准的其他任何系统进行通信。OSI将计算机网络体系结构（architecture）划分为以下七层：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层 |
+| OSI | Open System Interconnection | 开发式系统互联 | OSI将计算机网络体系结构(architecture)划分为以下七层：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层 |
+| OSI/RM | Open System Interconnection Reference Model | 开放式系统互联引用 | "开放"是指非独家垄断的，因此只要遵循OSI标准，一个系统就可以和位于世界上任何地方的，也遵循这同一标准的其他任何系统进行通信。OSI将计算机网络体系结构(architecture)划分为以下七层：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层 |
 | OUI | Organizational Unique Identifier | 组织唯一标识符 | |
 | OFDM | Orthogonal Frequency Division Multiplexing | 正交频分复用 | 将信道分成若干正交子信道，将高速数据信号转换成并行的低速子数据流，调制到在每个子信道上进行传输 |
 | OSPF | Open Shortest Path First | 开发式最短路径优先 | 基于分布式的链路状态协议，适用于大型互联网。OSPF只在链路状态发生变化时，才用向本自治系统内的所有路由器，用洪泛法发送与本路由器相邻的所有路由器的链路状态信息，最终了解全网的拓扑结构图。 |
@@ -216,17 +216,17 @@
 | -------- | -------- | -------- | ---- |
 | PM | Phase Modulation | 调相 | 载波的相位对其参考相位的偏离值随调制信号的瞬时值成比例变化的调制方式，称为相位调制，或称调相 | 
 | PING | Packet Internet Groper | 因特网包探测器 | 用于测试网络连接量的程序。使用了ICMP回送请求和回送回答报文，是应用程序直接使用网络层ICMP的例子，没有通过TCP/UDP |
-| PAT | Port Address Translation | 端口地址转换 | 是对网络地址转换（NAT）的扩展，它允许本地网（LAN）上的多个设备映射到一个单一的公共IP地址 |
+| PAT | Port Address Translation | 端口地址转换 | 是对网络地址转换(NAT)的扩展，它允许本地网(LAN)上的多个设备映射到一个单一的公共IP地址 |
 | POP3 | Post Office Protocol 3 | 邮局协议3 | 用于从服务器读取邮件。本协议主要用于支持使用客户端远程管理在服务器上的电子邮件 |
 | POST | Power On Self Test | 开机自检 | |
 | PVC | Permanent Virtual Circuit | 永久虚拟电路 | |
 | PPP | Point-to-Point Protocol | 点对点协议 | 是为在同等单元之间传输数据包这样的简单链路设计的数据链路层协议，是数据链路层使用最多的一种协议。这种链路提供全双工操作，并按照顺利传递数据包。特点为：简单；只检测差错而不纠正差错，不进行流量控制；支持多种网络层协议 |
 | PAP | Password Authentication Protocol | 密码认证协议 | 远程节点不不停的在链路路上反复发送⽤用户名/密码，直到验证通过或者连接终⽌止。不不健壮的身份认证协议，使⽤用明⽂文发送密码。连接建立前只有一次认证。 |
 | PRI | Primary Rate Interface | 主速率接口 | 提供23B + D(T1或者叫DS1线路，美国和日本地区)或30B + D(E1 线路，欧洲地区)，B信道和D信道都工作在64 kbps的速率下 |
-| PDU | Protocol Data Unit | 协议数据单元 | 是指对等层次之间传递的数据单位。 物理层的 PDU是数据位（bit），数据链路层的 PDU是数据帧（frame），网络层的PDU是数据包（packet），传输层的 PDU是数据段（segment），其他更高层次的PDU是数据（data） |
+| PDU | Protocol Data Unit | 协议数据单元 | 是指对等层次之间传递的数据单位。 物理层的 PDU是数据位(bit)，数据链路层的 PDU是数据帧(frame)，网络层的PDU是数据包(packet)，传输层的 PDU是数据段(segment)，其他更高层次的PDU是数据(data) |
 | PDU | Packet Data Unit | 分组数据单元 | |
 | PID | Port Identification | 端口ID | 2字节，由优先级和端口号组成，用于选举根端口和指派端口等 |
-| Proxy ARP | Proxy Address Resolution Protocol | 代理地址解析协议 | 是通过使用一个主机（通常为router），来作为指定的设备对另一设备的ARP请求作出应答。代理ARP是ARP协议的一个变种。 对于没有配置缺省网关的计算机要和其他网络中的计算机实现通信，网关收到源计算机的ARP请求会使用自己的MAC地址与目标计算机的IP地址对源计算机进行应答。代理ARP就是将一个主机作为对另一个主机ARP进行应答 |
+| Proxy ARP | Proxy Address Resolution Protocol | 代理地址解析协议 | 是通过使用一个主机(通常为router)，来作为指定的设备对另一设备的ARP请求作出应答。代理ARP是ARP协议的一个变种。 对于没有配置缺省网关的计算机要和其他网络中的计算机实现通信，网关收到源计算机的ARP请求会使用自己的MAC地址与目标计算机的IP地址对源计算机进行应答。代理ARP就是将一个主机作为对另一个主机ARP进行应答 |
 
 # 17. Q
 
@@ -239,7 +239,7 @@
 | -------- | -------- | -------- | ---- |
 | RZ | Return to Zero | 归零制码 | 是信号电平在一个码元之内都要恢复到零的编码方式 |
 | RARP | Reverse Address Resolution Protocol | 反向地址解析协议 | ARP为IP到MAC的转换，而RARP为MAC到IP的转换，向RARP服务器请求分配IP。主要流程：发出要反向解析的物理地址并希望返回其对应的IP地址。发送主机发送一个本地的 RARP 广播，在此广播包中，声明自己的 MAC 地址并且请求任何收到此请求的 RARP 服务器分配一个 IP 地址。 本地网段上的 RARP服务器收到此请求后，检查其 RARP 列列表，查找该 MAC 地址对应的 IP 地址。 如果存在，RARP服务器器就给源主机发送一个响应数据包并将此 IP 地址提供给对方主机使用; 如果不存在，RARP服务器对此不做任何的响应。 源主机收到从 RARP 服务器的响应信息，就利用得到的 IP 地址进行通讯;如果一直没有收到 RARP 服务器的响应信息，表示初始化失败。 |
-| RIP | Routing Information Protocol | 路由信息协议 | 分布式基于距离向量的路由选择协议，只适用于小型网络。按固定的时间间隔与相邻路由器交换信息。交换的信息是自己当前的路由表，即到达本自治系统中所有网络的（最短）距离，以及到每个网络应经过的下一跳路由器。但是不知道全网的拓扑结构。 |
+| RIP | Routing Information Protocol | 路由信息协议 | 分布式基于距离向量的路由选择协议，只适用于小型网络。按固定的时间间隔与相邻路由器交换信息。交换的信息是自己当前的路由表，即到达本自治系统中所有网络的(最短)距离，以及到每个网络应经过的下一跳路由器。但是不知道全网的拓扑结构。 |
 | RAM | Random Access Memory | 随机存取存储器 | |
 | ROM | Read-only Memory | 只读存储器 | |
 | RPC | Remote Procedure Call | 远程过程调用 | 透明访问远程程序，就好像本地一样 |
@@ -262,7 +262,7 @@
 | SSID | Service Set Identifier | 服务集标识符 | |
 | SIFS | Short Interframe Space | 短帧间间隔 | |
 | SCTP | Stream Control Transmission Protocol | 流控制传输协议 | 进行视频和音频的传输 |
-| SNMP | Simple Network Management Protocol | 简单网络管理协议 | 由一组网络管理的标准组成，包含一个应用层协议（application layer protocol）、数据库模型（database schema）和一组资源对象。该协议能够支持网络管理系统，用以监测连接到网络上的设备是否有任何引起管理上关注的情况。 |
+| SNMP | Simple Network Management Protocol | 简单网络管理协议 | 由一组网络管理的标准组成，包含一个应用层协议(application layer protocol)、数据库模型(database schema)和一组资源对象。该协议能够支持网络管理系统，用以监测连接到网络上的设备是否有任何引起管理上关注的情况。 |
 | SPF | Shortest Path First | 最短路径优先算法 | 最短路径算法，这个算法其实就是Dijkstra算法，是LSP中计算路径的一种方式 |
 | SVC | Switched Virtual Circuits | 交换虚拟电路 | | 
 | SQL | Structured Query Language | 结构化查询语言 | |
@@ -280,7 +280,7 @@
 | -------- | -------- | -------- | ---- |
 | TCP | Transmission Control Protocal | 传输控制协议 | 一种面向连接的、可靠的、基于字节流的传输层通信协议，不支持单播和组播 |
 | TFTP | Trivial File Transfer Protocol | 一般文本传输协议 | TCP/IP协议族中的一个用来在客户机与服务器之间进行简单文件传输的协议，提供不复杂、开销不大的文件传输服务。无连接的服务。基于UDP，小且容易实现 |
-| TDM | Time Division Multiplexing | 时分复用 | 采用同一物理连接的不同时段来传输不同的信号，达到多路传输的目的 或者是 时分复用是将时间划分为一段段等长的时分复用（TDM）帧，每个时分复用的用户在每个 TDM 帧中占用固定序号的时隙 |
+| TDM | Time Division Multiplexing | 时分复用 | 采用同一物理连接的不同时段来传输不同的信号，达到多路传输的目的 或者是 时分复用是将时间划分为一段段等长的时分复用(TDM)帧，每个时分复用的用户在每个 TDM 帧中占用固定序号的时隙 |
 | TIA | Telecommunications Industry Association | 电信工业协会 | 是全方位的服务性国家贸易组织 | 
 | TTL | Time To Live | 生存时间 | |
 | TPDU | Transport Protocol Data Unit | 传送协议数据单元 | |
@@ -362,11 +362,11 @@
 27. CO Switch ：中心局交换机
 28. 流量控制Flow Control：让发送方的发送速率不要太快，要让接收方来得及接收。
 29. 拥塞控制Congestion Control：防止过多的数据注入到网络中，这样可以使网络中的路由器或链路不致过载。
-30. Socket:TCP连接的端点，表示为（IP address：port）。一个连接表示为（socket_sourse,socket_des)
+30. Socket:TCP连接的端点，表示为(IP address：port)。一个连接表示为(socket_sourse,socket_des)
 31. Computer virus病毒：编制者在计算机程序中插入的破坏计算机功能或者数据的代码，能影响计算机使用，能自我复制的一组计算机指令或者程序代码
 32. simplex transmission：单工。只能有一个方向的通信，没有反⽅方向的交互。
 33. half-duplex transmission：半双工。信号可双向传输，但不能同时发送或同时接收。
 34. full-duplex transmission：全双工。通信的双方可同时发送和接收消息，信号可同时双向传输。
 35. Split horizon：水平分割是一种避免路由环路的出现和加快路由汇聚的技术。水平分割法的规则和原理是路由器从某个接口接收到的更新信息不允许再从这个接口发回去。
-36. 冲突域（物理分段）：连接在同一导线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合或以太网上竞争同一带宽的节点集合。
+36. 冲突域(物理分段)：连接在同一导线上的所有工作站的集合，或者说是同一物理网段上所有节点的集合或以太网上竞争同一带宽的节点集合。
 37. 广播域：接收同样广播消息的节点的集合。

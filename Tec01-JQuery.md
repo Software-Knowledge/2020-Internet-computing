@@ -31,7 +31,7 @@ JQuery
    2. 从 CDN 中载入 jQuery, 如从 Google 中加载 jQuery。
 2. 有两个版本的 jQuery 可供下载。 
    1. Production version - 用于实际的网站中，已被精简和压缩。
-   2. Development version - 用于测试和开发（未压缩，是可读的代码）
+   2. Development version - 用于测试和开发(未压缩，是可读的代码)
 3. 下载 jQuery
    1. jQuery 库是一个 JavaScript 文件，可以使用 HTML 的 `<script>` 标签引用它：
 ```js
@@ -53,7 +53,7 @@ $("p.test").hide() - 隐藏所有 class="test" 的 <p> 元素
 $("#test").hide() - 隐藏所有 id="test" 的元素
 ```
 
-2. 所有 jQuery 函数位于一个 document ready 函数中，这是为了防止文档在完全加载 （就绪）之前运行 jQuery 代码，即在 DOM 加载完成后才可以对 DOM 进行操作。 如果在文档没有完全加载之前就运行函数，操作可能失败。下面是两个具体的例子：
+2. 所有 jQuery 函数位于一个 document ready 函数中，这是为了防止文档在完全加载 (就绪)之前运行 jQuery 代码，即在 DOM 加载完成后才可以对 DOM 进行操作。 如果在文档没有完全加载之前就运行函数，操作可能失败。下面是两个具体的例子：
    1. 试图隐藏一个不存在的元素。
    2. 获得未完全加载的图像的大小。
 
@@ -140,8 +140,8 @@ $("input").blur(function(){
 1. 以绑定click为例
 ```js
 $().事件名(事件处理函数) 如： $("#d").click(function(){})
-$().on(“事件名”,事件处理函数) 如：$("#d").on(“click”,function(){})
-$().bind(“事件名”,事件处理函数) 如：$("#d").bind("click",function(){})
+$().on("事件名",事件处理函数) 如：$("#d").on("click",function(){})
+$().bind("事件名",事件处理函数) 如：$("#d").bind("click",function(){})
 ```
 
 ## 4.9. 解除事件绑定
